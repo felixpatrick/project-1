@@ -14,22 +14,22 @@ formEl.addEventListener("submit", (event) => {
 
   const formStringfy = JSON.stringify(formObj);
   localStorage.setItem("form", formStringfy);
-
-  const passwordValidation = () => {
-    let confirmedPassword;
-
-    while (true) {
-      confirmedPassword = prompt("Kindly, confirm your password");
-
-      if (confirmedPassword === formObj.password) {
-        alert("Password is correct! Redirecting...");
         window.location.href = "validate.html";
-        break;
-      } else {
-        alert("Your password is incorrect, verify again!");
-      }
-    }
-  };
 
-  passwordValidation();
+  // const passwordValidation = () => {
+  //   let confirmedPassword;
+
+  //   while (true) {
+  //     confirmedPassword = prompt("Kindly, confirm your password");
+
+  //     if (confirmedPassword === formObj.password) {
+  //       alert("Password is correct! Redirecting...");
+  //       break;
+  //     } else {
+  //       alert("Your password is incorrect, verify again!");
+  //     }
+  //   }
+  // };
+
+  // passwordValidation();
 });
